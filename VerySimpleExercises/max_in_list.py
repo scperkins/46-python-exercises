@@ -9,7 +9,7 @@ and returns the largest one.
 """
 
 def max_in_list(seq):
-    return sorted(seq)[-1]
+    return sorted(seq, reverse=True)[0]
 
 if __name__ == "__main__":
     print(max_in_list([1,2,3,4,10,100,87,90]))
