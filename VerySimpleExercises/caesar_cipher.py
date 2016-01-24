@@ -56,4 +56,6 @@ class TestEncodeDecode(unittest.TestCase):
         self.assertEqual(decode_rot_13('uryyb'), 'hello')
 
 if __name__ == "__main__":
+    print(decode_rot_13('Pnrfne pvcure? V zhpu cersre Pnrfne fnynq!'))
     unittest.main()
+    
