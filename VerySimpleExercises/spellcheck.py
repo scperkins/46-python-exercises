@@ -17,7 +17,7 @@ def correct(string):
 class TestSpellCheck(unittest.TestCase):
 
     def test_correct(self):
-        self.assertEquals(correct('This is very funny and cool. Indeed!'),
+        self.assertEquals(correct('This   is  very funny  and   cool.Indeed!'),
                 'This is very funny and cool. Indeed!')
 
 if __name__ == "__main__":
