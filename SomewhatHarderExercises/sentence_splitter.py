@@ -45,6 +45,7 @@ def split_sentence(filename):
         sentences = re.sub(r'\?\s', '?\n', sentences)
 
         print(sentences)
+    f.close()
 
 if __name__ == "__main__":
     split_sentence('resources/splitter.txt')
