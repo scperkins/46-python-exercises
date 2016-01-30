@@ -21,15 +21,18 @@ like so:
 """
 import random
 
-colors = ['brown', 'blue', 'yellow', 'green', 'red']
+if __name__ == "__main__":
+    
+    colors = ['brown', 'blue', 'yellow', 'green', 'red']
+    color = random.choice(colors)
+    anagram = ''.join(random.sample(color, len(color)))
+    print('Color word anagram: {}'.format(anagram))
 
-color = random.choice(colors)
-anagram = ''.join(random.sample(color, len(color)))
-print('Color word anagram: {}'.format(anagram))
-
-while True:
-    guess = set(input('Guess the color word!\n'))
-    for letters in guess:
-        if letter
+    correct = False
+    while not correct:
+        guess = input('Guess the color word!\n')
+        if guess == color:
+            print('Correct!')
+            correct = True
     
 
